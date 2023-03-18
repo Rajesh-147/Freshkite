@@ -13,7 +13,7 @@ import cors from "cors";
 
 const app = express();
 dotenv.config(); 
-
+//db connection
 const connect = async () => {
   try {
     await mongoose.connect(process.env.MONGO);
